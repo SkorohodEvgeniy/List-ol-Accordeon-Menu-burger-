@@ -1,0 +1,66 @@
+/*Обнуление*/
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+img {
+  width: 100%;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+/*-------------------*/
+
+body {
+  padding-top: 100px;
+}
+
+.div__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ol {
+  counter-reset: ol-none;
+}
+ol li {
+  position: relative;
+  padding: 0 0 0 50px;
+}
+ol li::before {
+  counter-increment: ol-none;
+  content: counter(ol-none) ")";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  text-align: right;
+  color: aqua;
+}
