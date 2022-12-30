@@ -35,17 +35,7 @@ body {
   line-height: 1;
 }
 
-/*-------------------*/
-
-body {
-  padding-top: 100px;
-}
-
-.div__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/*-------Style list ol ------------*/
 
 ol {
   counter-reset: ol-none;
@@ -60,7 +50,36 @@ ol li::before {
   position: absolute;
   left: 0;
   top: 0;
+
   width: 40px;
   text-align: right;
   color: aqua;
+}
+
+/*----Footer down (Липкий Footer)---------*/
+html,
+body {
+  height: 100%; /*Magic*/
+  line-height: 1;
+}
+.wrapper {
+  min-height: 100%; /*Magic*/
+  display: flex; /*Magic*/
+  flex-direction: column; /*Magic*/
+}
+
+.header {
+  background-color: #794f45;
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+}
+.main {
+  flex: 1 1 auto; /*Magic*/
+}
+.footer {
+  background-color: #77608d;
+  text-align: center;
+  padding: 30px;
+  color: #fff;
 }
