@@ -4,13 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">I Header</header>
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="#" class="header__logo"
+              ><img src="img/logo.png" alt="logo"
+            /></a>
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li><a href="" class="header__link">Link-1</a></li>
+                <li><a href="" class="header__link">Link-2</a></li>
+                <li><a href="" class="header__link">Link-3</a></li>
+                <li><a href="" class="header__link">Link-4</a></li>
+                <li><a href="" class="header__link">Link-5</a></li>
+                <li><a href="" class="header__link">Link-6</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
       <main class="main">
+        <!--List ol -->
         <ol>
           <li>Пункт №1</li>
           <li>Пункт №2</li>
@@ -23,10 +47,43 @@
           <li>Пункт №9</li>
           <li>Пункт №10</li>
         </ol>
+
+        <!--Accordion-->
+
+        <div class="accordion one">
+          <div class="accordion__block">
+            <div class="accordion__title">Заголовок 1</div>
+            <div class="accordion__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+              ad, quasi vel facilis amet debitis sunt ratione excepturi ducimus
+              velit.
+            </div>
+          </div>
+          <div class="accordion__block">
+            <div class="accordion__title">Заголовок 2</div>
+            <div class="accordion__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+              ad, quasi vel facilis amet debitis sunt ratione excepturi ducimus
+              velit.
+            </div>
+          </div>
+          <div class="accordion__block">
+            <div class="accordion__title">Заголовок 3</div>
+            <div class="accordion__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+              ad, quasi vel facilis amet debitis sunt ratione excepturi ducimus
+              velit.
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="footer">I Footer</footer>
     </div>
   </body>
-
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"
+  ></script>
   <script src="src/script.js"></script>
 </html>

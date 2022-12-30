@@ -14,7 +14,7 @@ ol {
   list-style: none;
 }
 img {
-  width: 100%;
+  max-width: 100%;
   vertical-align: top;
 }
 a {
@@ -33,6 +33,133 @@ html,
 body {
   height: 100%;
   line-height: 1;
+}
+
+/*Menu Burger*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 0 15px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #77608d;
+  z-index: 2;
+}
+.header .container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+.header__logo {
+  flex: 0 0 60px;
+  z-index: 3;
+}
+.header__list {
+  display: flex;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+.header__list li {
+  margin-left: 20px;
+}
+.header__list li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.main {
+  padding-top: 100px;
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #18b5a4;
+    padding: 70px 0 0 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__menu.active {
+    top: 0;
+  }
+  .header__body {
+    height: 50px;
+  }
+  .header__logo {
+    flex: 0 0 40px;
+  }
+  .header__list {
+    display: block;
+  }
 }
 
 /*-------Style list ol ------------*/
@@ -72,7 +199,6 @@ body {
   font-size: 24px;
   background-color: #794f45;
   text-align: center;
-  padding: 30px;
   color: #fff;
 }
 .main {
@@ -85,3 +211,52 @@ body {
   padding: 30px;
   color: #fff;
 }
+
+/* Accordion*/
+.accordion {
+  padding: 50px;
+}
+.accordion__block {
+  margin-bottom: 20px;
+}
+.accordion__text {
+  padding-top: 10px;
+  display: none;
+}
+.accordion__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+/* Accordion arrow*/
+.accordion__title::before,
+.accordion__title::after {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 8px;
+  transition: all 0.3s ease 0s;
+}
+.accordion__title::before {
+  transform: rotate(40deg);
+  left: 0;
+}
+.accordion__title::after {
+  transform: rotate(-40deg);
+  left: 8px;
+}
+.accordion__title.active::before,
+.accordion__title.active::after {
+  background-color: crimson;
+}
+.accordion__title.active::before {
+  transform: rotate(-40deg);
+}
+.accordion__title.active::after {
+  transform: rotate(40deg);
+}
+/* Accordion END*/
