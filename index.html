@@ -155,7 +155,17 @@
               <input id="email" name="email" type="email" required />
               <span></span>
             </div>
-
+            <div>
+              <label for="age">Your age: (18+)</label>
+              <input name="age" type="number" value="5" min="18" />
+              <span></span>
+            </div>
+            <div>
+              <label>
+                <input name="tos" type="checkbox" required checked /> - Do you
+                agree to ToS?
+              </label>
+            </div>
             <button class="btn-reset form__btn">Отправить</button>
           </fieldset>
         </form>
