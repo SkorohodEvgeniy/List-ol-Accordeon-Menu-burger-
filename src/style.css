@@ -261,6 +261,42 @@ body {
   transform: rotate(40deg);
 }
 /* Accordion END*/
+/* Accordion 2ver*/
+.faq__inner {
+  background: #fff;
+  border: 5px solid transparent;
+  border-radius: 14px;
+  padding: 0 32px;
+  transition-property: border-color;
+  transition-duration: .3s;
+  margin-bottom: 22px;
+}
+.faq__inner.is-open {
+  border-color: #E5E9ED;
+}
+.faq__inner-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  color: #1D1D1B;
+  position: relative;
+  padding: 28px 30px 28px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.faq__inner-body {
+  padding: 25px 0 32px 0;
+  border-top: 2px solid #E5E9ED;
+  display: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #335371;
+}
+/* Accordion 2ver END*/
 
 /* Tabs */
 .content {
