@@ -323,8 +323,7 @@ body {
   position: relative;
   z-index: 2;
 }
-.tabs__body {
-}
+
 .tabs__block {
   padding: 20px;
   font-size: 18px;
