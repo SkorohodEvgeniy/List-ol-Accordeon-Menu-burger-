@@ -31,34 +31,34 @@ $(document).ready(function () {
   });
 });
 
-   // accordion 2ver.
-   (function () {
-    var initAccordion = function (itemsClass, headerClass, bodyClass) {
-        var $items = $(itemsClass);
+// accordion 2ver.
+(function () {
+  var initAccordion = function (itemsClass, headerClass, bodyClass) {
+    var $items = $(itemsClass);
 
-        $items.find(headerClass).on('click', function () {
-            $item = $(this).parent();
-            $items.not($item).removeClass('is-open');
-            $items.not($item).find(headerClass).removeClass('is-open');
-            $items.not($item).find(bodyClass).slideUp(250);
+    $items.find(headerClass).on('click', function () {
+      $item = $(this).parent();
+      $items.not($item).removeClass('is-open');
+      $items.not($item).find(headerClass).removeClass('is-open');
+      $items.not($item).find(bodyClass).slideUp(250);
 
 
-            if ($(this).hasClass('is-open')) {
-                $item.removeClass('is-open');
-                $(this).removeClass('is-open');
-                $(this).siblings(bodyClass).slideUp(250);
+      if ($(this).hasClass('is-open')) {
+        $item.removeClass('is-open');
+        $(this).removeClass('is-open');
+        $(this).siblings(bodyClass).slideUp(250);
 
-            } else {
-                $item.addClass('is-open');
-                $(this).addClass('is-open');
-                $(this).siblings(bodyClass).slideDown(250);
+      } else {
+        $item.addClass('is-open');
+        $(this).addClass('is-open');
+        $(this).siblings(bodyClass).slideDown(250);
 
-            }
-        });
-    };
+      }
+    });
+  };
 
-    // suppliers
-    initAccordion('.faq__inner', '.faq__inner-header', '.faq__inner-body');
+  // suppliers
+  initAccordion('.faq__inner', '.faq__inner-header', '.faq__inner-body');
 
 
 })($);
@@ -90,3 +90,28 @@ function counts() {
 }
 counts();
 setInterval(counts, 1000);
+
+
+/* Accordion with picture */
+const initOptions = () => {
+  const optionsContainer = document.querySelector('.options')
+  const options = document.querySelectorAll('.option')
+
+  optionsContainer.style.setProperty('--total-options', options.length)
+
+  optionsContainer.addEventListener('click', (event) => {
+    const clickedOption = event.target.closest('.option')
+
+    if (!clickedOption || clickedOption.classList.contains('active')) return
+
+    options.forEach((option) => {
+      option.classList.remove('active')
+    })
+
+    clickedOption.classList.add('active')
+  })
+}
+
+document.addEventListener('DOMContentLoaded', initOptions)
+
+/* Accordion with picture END*/

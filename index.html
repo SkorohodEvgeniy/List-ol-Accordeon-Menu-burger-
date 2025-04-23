@@ -1,302 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!--Header menu-->
-      <header class="header">
-        <div class="container">
-          <div class="header__body">
-            <a href="#" class="header__logo"
-              ><img src="img/logo.png" alt="logo"
-            /></a>
-            <div class="header__burger">
-              <span></span>
-            </div>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li><a href="" class="header__link">Link-1</a></li>
-                <li><a href="" class="header__link">Link-2</a></li>
-                <li><a href="" class="header__link">Link-3</a></li>
-                <li><a href="" class="header__link">Link-4</a></li>
-                <li><a href="" class="header__link">Link-5</a></li>
-                <li><a href="" class="header__link">Link-6</a></li>
-              </ul>
-            </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="src/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!--Header menu-->
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a href="#" class="header__logo"><img src="img/logo.png" alt="logo" /></a>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li><a href="" class="header__link">Link-1</a></li>
+              <li><a href="" class="header__link">Link-2</a></li>
+              <li><a href="" class="header__link">Link-3</a></li>
+              <li><a href="" class="header__link">Link-4</a></li>
+              <li><a href="" class="header__link">Link-5</a></li>
+              <li><a href="" class="header__link">Link-6</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!--List ol -->
+
+      <ol>
+        <li>Пункт №1</li>
+        <li>Пункт №2</li>
+        <li>Пункт №3</li>
+        <li>Пункт №4</li>
+        <li>Пункт №5</li>
+        <li>Пункт №6</li>
+        <li>Пункт №7</li>
+        <li>Пункт №8</li>
+        <li>Пункт №9</li>
+        <li>Пункт №10</li>
+      </ol>
+
+      <!--Accordion 1 ver-->
+
+      <div class="accordion one">
+        <div class="accordion__block">
+          <div class="accordion__title">Заголовок 1</div>
+          <div class="accordion__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+            ad, quasi vel facilis amet debitis sunt ratione excepturi ducimus
+            velit.
           </div>
         </div>
-      </header>
-
-      <main class="main">
-        <!--List ol -->
-
-        <ol>
-          <li>Пункт №1</li>
-          <li>Пункт №2</li>
-          <li>Пункт №3</li>
-          <li>Пункт №4</li>
-          <li>Пункт №5</li>
-          <li>Пункт №6</li>
-          <li>Пункт №7</li>
-          <li>Пункт №8</li>
-          <li>Пункт №9</li>
-          <li>Пункт №10</li>
-        </ol>
-
-        <!--Accordion 1 ver-->
-
-        <div class="accordion one">
-          <div class="accordion__block">
-            <div class="accordion__title">Заголовок 1</div>
-            <div class="accordion__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
-              ad, quasi vel facilis amet debitis sunt ratione excepturi ducimus
-              velit.
-            </div>
+        <div class="accordion__block">
+          <div class="accordion__title">Заголовок 2</div>
+          <div class="accordion__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+            ad, quasi vel facilis amet debitis sunt ratione excepturi ducimus
+            velit.
           </div>
-          <div class="accordion__block">
-            <div class="accordion__title">Заголовок 2</div>
-            <div class="accordion__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
-              ad, quasi vel facilis amet debitis sunt ratione excepturi ducimus
-              velit.
-            </div>
+        </div>
+        <div class="accordion__block">
+          <div class="accordion__title">Заголовок 3</div>
+          <div class="accordion__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+            ad, quasi vel facilis amet debitis sunt ratione excepturi ducimus
+            velit.
           </div>
-          <div class="accordion__block">
-            <div class="accordion__title">Заголовок 3</div>
-            <div class="accordion__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
-              ad, quasi vel facilis amet debitis sunt ratione excepturi ducimus
-              velit.
+        </div>
+      </div>
+
+      <!--Accordion 2 ver-->
+      <div class="faq__inners">
+        <div class="faq__inner">
+          <div class="faq__inner-header">Як обрати продукт для себе?</div>
+          <div class="faq__inner-body">
+            <p>При виборі необхідно враховувати такі критерії:</p>
+            <ul>
+              <li>чого не вистачає організму та які в нього потреби</li>
+              <li>чи приймаєш зараз якість добавки</li>
+              <li>чи немає у тебе протипоказань</li>
+            </ul>
+            <p><a class="hero__link button-callback" href="#" style="border:none;padding:0;text-decoration: none;"
+                tabindex="0">Замовте консультацію спеціаліста. </a></p>
+            <p>Ми допоможемо з вибором ❤️</p>
+          </div>
+        </div>
+        <div class="faq__inner">
+          <div class="faq__inner-header">Які є протипоказання?</div>
+          <div class="faq__inner-body">
+            <p><strong>Омега-3 протипоказання: </strong></p>
+            <ul>
+              <li>алергія на рибу і морепродукти</li>
+              <li>порушення згортання крові або підготовка до операції</li>
+            </ul>
+            <p><strong>Омега-3 застереження (це коли краще запитати у лікаря):</strong></p>
+            <ul>
+              <li>камені в жовчному міхурі, ниркова недостатність</li>
+              <li>гіперфункція щитовидної залози</li>
+              <li>виразкова хвороба</li>
+            </ul>
+            <p><strong>Вітамін D3&nbsp;протипоказання:</strong></p>
+            <ul>
+              <li>особиста непереносимість компонентів</li>
+              <li>підвищений рівень Кальцію і Вітаміну D</li>
+            </ul>
+            <p><strong>Вітамін D3 застереження:</strong></p>
+            <ul>
+              <li>камені в жовчному міхурі і нирках</li>
+            </ul>
+            <p><strong>Акулячий жир протипоказання:</strong></p>
+            <ul>
+              <li>аутоімунні захворювання</li>
+              <li>алергія на рибу та морепродукти</li>
+              <li>вагітність та грудне годування</li>
+              <li>вік до 12 років</li>
+            </ul>
+            <p><strong>Сквален протипоказання:</strong></p>
+            <ul>
+              <li>
+                <p>вагітні та жінки у період лактації</p>
+              </li>
+              <li>
+                <p>діти до 12 років</p>
+              </li>
+              <li>
+                <p>алергія на рибу</p>
+              </li>
+            </ul>
+            <p><strong>Колаген протипоказання:</strong></p>
+            <ul>
+              <li>алергія на рибу</li>
+            </ul>
+          </div>
+        </div>
+        <div class="faq__inner">
+          <div class="faq__inner-header">Як відбувається оплата і доставка по Україні?</div>
+          <div class="faq__inner-body">
+            <p>Оплатити можна онлайн на сайті додавши <a href="https://perlahelsa.ua/store"
+                style="font-weight: 500;text-decoration: underline;">товар</a> у кошик або при отриманні на пошті, або
+              кур'єру. При оформленні замовлення через кошик – доступна оплата частинами.<br>
+              Доставка здійснюється Новою Поштою та&nbsp;Укрпоштою.</p>
+          </div>
+        </div>
+        <div class="faq__inner">
+          <div class="faq__inner-header">Як відбувається оплата і доставка в інші країни?</div>
+          <div class="faq__inner-body">
+            <p>Оплата здійснюється онлайн відразу за продукт та доставку після оформлення рахунку менеджером.</p>
+            <p>Ми&nbsp;відправляємо&nbsp;по всьому світу, крім росії, білорусі, ПМР та країн, у які заборонено ввезення
+              БАДів, таких як ОАЕ, Саудівська Аравія, Ізраїль, Єгипет, Чехія, Туреччина.</p>
+            <p>Термін доставки — у середньому від 14 до 28 днів.</p>
+          </div>
+        </div>
+        <div class="faq__inner">
+          <div class="faq__inner-header">Який термін придатності у продукції?</div>
+          <div class="faq__inner-body">
+            <p>Термін придатності нашої продукції – 2 роки. На упаковці вказано дату виготовлення і закінчення терміну
+              придатності. Процеси логістики і виробництва дозволяють тобі отримувати продукт, якому не більше 6 місяців
+              з моменту капсулювання.</p>
+          </div>
+        </div>
+        <div class="faq__inner">
+          <div class="faq__inner-header">Чи потрібно здавати аналізи перед прийомом?</div>
+          <div class="faq__inner-body" style="display: none;">
+            <p>Це не обов'язково. У випадку з Омега-3 – в Україні практично немає лабораторій, де б можна було здати
+              аналіз, та й ця добавка не накопичується в організмі. У випадку з вітаміном Д – якщо купуєте в цілях
+              профілактики – аналіз робити непотрібно. Якщо ти підозрюєш, що у тебе дефіцит, і хочеш підібрати велику
+              дозу для "лікування" дефіциту – тоді аналіз краще здати.</p>
+          </div>
+        </div>
+        <div class="faq__inner is-open">
+          <div class="faq__inner-header is-open">Як обрати продукт для дитини?</div>
+          <div class="faq__inner-body" style="display: block;">
+            <p>Необхідно враховувати такі критерії:</p>
+            <ul>
+              <li>які потреби організму у дитини, його вік і вагу</li>
+              <li>чи приймає зараз якісь добавки та що брали раніше</li>
+              <li>чи немає протипоказань</li>
+            </ul>
+            <p><a class="hero__link button-callback" href="#" style="border:none;padding:0;text-decoration: none;"
+                tabindex="0">Замовте консультацію фахівця. </a></p>
+            <p>Ми допоможемо з вибором ❤️</p>
+          </div>
+        </div>
+        <div class="faq__inner">
+          <div class="faq__inner-header">Чи є повернення товару?</div>
+          <div class="faq__inner-body">
+            <p>У дієтичних добавках не передбачено повернення продукції після відкриття упаковки, але ми так сильно
+              впевнені в якості нашого продукту, що готові повернути тобі гроші,&nbsp;якщо щось не сподобається.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Tabs-->
+
+      <div class="content">
+        <div class="tabs">
+          <nav class="tabs__items">
+            <a href="#tab_01" class="tabs__item"><span>Первая вкладка</span></a>
+            <a href="#tab_02" class="tabs__item"><span>Вторая вкладка</span></a>
+            <a href="#tab_03" class="tabs__item"><span>Третья вкладка</span></a>
+          </nav>
+          <div class="tabs__body">
+            <div id="tab_01" class="tabs__block">
+              Первая вкладка. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Consequatur nisi eligendi at enim, minima
+              commodi, maiores libero atque tempora suscipit alias assumenda.
+              Recusandae rerum fugiat delectus dolore eaque natus aspernatur.
+            </div>
+            <div id="tab_02" class="tabs__block">
+              Вторая вкладка. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Consequatur inventore itaque eligendi vel ad,
+              porro quas nam quam error architecto et numquam maiores? Quo
+              atque velit natus earum necessitatibus minus?
+            </div>
+            <div id="tab_03" class="tabs__block">
+              Третья вкладка. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Doloribus corrupti architecto id laboriosam
+              animi quidem mollitia porro nihil atque commodi? Harum id quasi
+              ipsa delectus. Obcaecati nesciunt eaque numquam aspernatur!
             </div>
           </div>
         </div>
-
-<!--Accordion 2 ver-->
-<div class="faq__inners">
-  <div class="faq__inner">
-  <div class="faq__inner-header">Як обрати продукт для себе?</div>
-  <div class="faq__inner-body"><p>При виборі необхідно враховувати такі критерії:</p>
-  <ul>
-  <li>чого не вистачає організму та які в нього потреби</li>
-  <li>чи приймаєш зараз якість добавки</li>
-  <li>чи немає у тебе протипоказань</li>
-  </ul>
-  <p><a class="hero__link button-callback" href="#" style="border:none;padding:0;text-decoration: none;" tabindex="0">Замовте консультацію спеціаліста. </a></p>
-  <p>Ми допоможемо з вибором ❤️</p>
-  </div>
-  </div>
-  <div class="faq__inner">
-  <div class="faq__inner-header">Які є протипоказання?</div>
-  <div class="faq__inner-body"><p><strong>Омега-3 протипоказання: </strong></p>
-  <ul>
-  <li>алергія на рибу і морепродукти</li>
-  <li>порушення згортання крові або підготовка до операції</li>
-  </ul>
-  <p><strong>Омега-3 застереження (це коли краще запитати у лікаря):</strong></p>
-  <ul>
-  <li>камені в жовчному міхурі, ниркова недостатність</li>
-  <li>гіперфункція щитовидної залози</li>
-  <li>виразкова хвороба</li>
-  </ul>
-  <p><strong>Вітамін D3&nbsp;протипоказання:</strong></p>
-  <ul>
-  <li>особиста непереносимість компонентів</li>
-  <li>підвищений рівень Кальцію і Вітаміну D</li>
-  </ul>
-  <p><strong>Вітамін D3 застереження:</strong></p>
-  <ul>
-  <li>камені в жовчному міхурі і нирках</li>
-  </ul>
-  <p><strong>Акулячий жир протипоказання:</strong></p>
-  <ul>
-  <li>аутоімунні захворювання</li>
-  <li>алергія на рибу та морепродукти</li>
-  <li>вагітність та грудне годування</li>
-  <li>вік до 12 років</li>
-  </ul>
-  <p><strong>Сквален протипоказання:</strong></p>
-  <ul>
-  <li>
-  <p>вагітні та жінки у період лактації</p>
-  </li>
-  <li>
-  <p>діти до 12 років</p>
-  </li>
-  <li>
-  <p>алергія на рибу</p>
-  </li>
-  </ul>
-  <p><strong>Колаген протипоказання:</strong></p>
-  <ul>
-  <li>алергія на рибу</li>
-  </ul>
-  </div>
-  </div>
-  <div class="faq__inner">
-  <div class="faq__inner-header">Як відбувається оплата і доставка по Україні?</div>
-  <div class="faq__inner-body"><p>Оплатити можна онлайн на сайті додавши <a href="https://perlahelsa.ua/store" style="font-weight: 500;text-decoration: underline;">товар</a> у кошик або при отриманні на пошті, або кур'єру. При оформленні замовлення через кошик – доступна оплата частинами.<br>
-  Доставка здійснюється Новою Поштою та&nbsp;Укрпоштою.</p>
-  </div>
-  </div>
-  <div class="faq__inner">
-  <div class="faq__inner-header">Як відбувається оплата і доставка в інші країни?</div>
-  <div class="faq__inner-body"><p>Оплата здійснюється онлайн відразу за продукт та доставку після оформлення рахунку менеджером.</p>
-  <p>Ми&nbsp;відправляємо&nbsp;по всьому світу, крім росії, білорусі, ПМР та країн, у які заборонено ввезення БАДів, таких як ОАЕ, Саудівська Аравія, Ізраїль, Єгипет, Чехія, Туреччина.</p>
-  <p>Термін доставки — у середньому від 14 до 28 днів.</p>
-  </div>
-  </div>
-  <div class="faq__inner">
-  <div class="faq__inner-header">Який термін придатності у продукції?</div>
-  <div class="faq__inner-body"><p>Термін придатності нашої продукції – 2 роки. На упаковці вказано дату виготовлення і закінчення терміну придатності. Процеси логістики і виробництва дозволяють тобі отримувати продукт, якому не більше 6 місяців з моменту капсулювання.</p>
-  </div>
-  </div>
-  <div class="faq__inner">
-  <div class="faq__inner-header">Чи потрібно здавати аналізи перед прийомом?</div>
-  <div class="faq__inner-body" style="display: none;"><p>Це не обов'язково. У випадку з Омега-3 – в Україні практично немає лабораторій, де б можна було здати аналіз, та й ця добавка не накопичується в організмі. У випадку з вітаміном Д – якщо купуєте в цілях профілактики – аналіз робити непотрібно. Якщо ти підозрюєш, що у тебе дефіцит, і хочеш підібрати велику дозу для "лікування" дефіциту – тоді аналіз краще здати.</p>
-  </div>
-  </div>
-  <div class="faq__inner is-open">
-  <div class="faq__inner-header is-open">Як обрати продукт для дитини?</div>
-  <div class="faq__inner-body" style="display: block;"><p>Необхідно враховувати такі критерії:</p>
-  <ul>
-  <li>які потреби організму у дитини, його вік і вагу</li>
-  <li>чи приймає зараз якісь добавки та що брали раніше</li>
-  <li>чи немає протипоказань</li>
-  </ul>
-  <p><a class="hero__link button-callback" href="#" style="border:none;padding:0;text-decoration: none;" tabindex="0">Замовте консультацію фахівця. </a></p>
-  <p>Ми допоможемо з вибором ❤️</p>
-  </div>
-  </div>
-  <div class="faq__inner">
-  <div class="faq__inner-header">Чи є повернення товару?</div>
-  <div class="faq__inner-body"><p>У дієтичних добавках не передбачено повернення продукції після відкриття упаковки, але ми так сильно впевнені в якості нашого продукту, що готові повернути тобі гроші,&nbsp;якщо щось не сподобається.</p>
-  </div>
-  </div>
-  </div>
-
-        <!--Tabs-->
-
-        <div class="content">
-          <div class="tabs">
-            <nav class="tabs__items">
-              <a href="#tab_01" class="tabs__item"
-                ><span>Первая вкладка</span></a
-              >
-              <a href="#tab_02" class="tabs__item"
-                ><span>Вторая вкладка</span></a
-              >
-              <a href="#tab_03" class="tabs__item"
-                ><span>Третья вкладка</span></a
-              >
-            </nav>
-            <div class="tabs__body">
-              <div id="tab_01" class="tabs__block">
-                Первая вкладка. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Consequatur nisi eligendi at enim, minima
-                commodi, maiores libero atque tempora suscipit alias assumenda.
-                Recusandae rerum fugiat delectus dolore eaque natus aspernatur.
-              </div>
-              <div id="tab_02" class="tabs__block">
-                Вторая вкладка. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Consequatur inventore itaque eligendi vel ad,
-                porro quas nam quam error architecto et numquam maiores? Quo
-                atque velit natus earum necessitatibus minus?
-              </div>
-              <div id="tab_03" class="tabs__block">
-                Третья вкладка. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Doloribus corrupti architecto id laboriosam
-                animi quidem mollitia porro nihil atque commodi? Harum id quasi
-                ipsa delectus. Obcaecati nesciunt eaque numquam aspernatur!
-              </div>
-            </div>
-          </div>
-          <div class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            explicabo, impedit culpa aliquam a fugit corrupti atque excepturi
-            consequatur veniam sapiente ut maiores eligendi tempore in dolores
-            suscipit. Suscipit, quo!
-          </div>
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+          explicabo, impedit culpa aliquam a fugit corrupti atque excepturi
+          consequatur veniam sapiente ut maiores eligendi tempore in dolores
+          suscipit. Suscipit, quo!
         </div>
+      </div>
 
-        <!--Valid Form-->
+      <!--Valid Form-->
 
-        <form action="#" class="form">
-          <fieldset>
-            <legend>Valid input Form</legend>
-            <div>
-              <label for="fname">First name *: </label>
-              <input
-                id="fname"
-                name="fname"
-                type="text"
-                pattern="[a-z]+"
-                required
-              />
-              <span></span>
-            </div>
-            <div>
-              <label for="lname">Last name *: </label>
-              <input
-                id="lname"
-                name="lname"
-                type="text"
-                pattern="[a-z]+"
-                required
-              />
-              <span></span>
-            </div>
-            <div>
-              <label for="email">Phone *: </label>
-              <input id="email" name="email" type="email" required />
-              <span></span>
-            </div>
-            <div>
-              <label for="age">Your age: (18+)</label>
-              <input name="age" type="number" value="5" min="18" />
-              <span></span>
-            </div>
-            <div>
-              <label>
-                <input name="tos" type="checkbox" required checked /> - Do you
-                agree to ToS?
-              </label>
-            </div>
-            <button class="btn-reset form__btn">Отправить</button>
-          </fieldset>
-        </form>
-
-        <!--Timer обратного отсчета-->
-        <div class="banner__timer">
-          <div class="banner__timer-text">До конца акции</div>
-          <div id="timer-group" class="banner__timer-time">
-            <span id="d"></span>
-            :
-            <span id="h"></span>
-            :
-            <span id="m"></span>
-            :
-            <span id="s"></span>
+      <form action="#" class="form">
+        <fieldset>
+          <legend>Valid input Form</legend>
+          <div>
+            <label for="fname">First name *: </label>
+            <input id="fname" name="fname" type="text" pattern="[a-z]+" required />
+            <span></span>
           </div>
-          <div class="banner__timer-day">
-            <span>Дней</span><span>Часов</span><span>Минут</span>
+          <div>
+            <label for="lname">Last name *: </label>
+            <input id="lname" name="lname" type="text" pattern="[a-z]+" required />
+            <span></span>
           </div>
+          <div>
+            <label for="email">Phone *: </label>
+            <input id="email" name="email" type="email" required />
+            <span></span>
+          </div>
+          <div>
+            <label for="age">Your age: (18+)</label>
+            <input name="age" type="number" value="5" min="18" />
+            <span></span>
+          </div>
+          <div>
+            <label>
+              <input name="tos" type="checkbox" required checked /> - Do you
+              agree to ToS?
+            </label>
+          </div>
+          <button class="btn-reset form__btn">Отправить</button>
+        </fieldset>
+      </form>
+
+      <!--Timer обратного отсчета-->
+      <div class="banner__timer">
+        <div class="banner__timer-text">До конца акции</div>
+        <div id="timer-group" class="banner__timer-time">
+          <span id="d"></span>
+          :
+          <span id="h"></span>
+          :
+          <span id="m"></span>
+          :
+          <span id="s"></span>
         </div>
-      </main>
-      <footer class="footer">I Footer</footer>
-    </div>
-  </body>
-  <script
-    src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-    crossorigin="anonymous"
-  ></script>
-  <script src="src/script.js"></script>
+        <div class="banner__timer-day">
+          <span>Дней</span><span>Часов</span><span>Минут</span>
+        </div>
+      </div>
+
+
+      <!--Accordion with picture END-->
+      <div class="optional_wrapper">
+        <div class="options">
+          <div class="option active" style="background-image: url(img/1.jpg);"></div>
+          <div class="option" style="background-image: url(img/2.jpg);"></div>
+          <div class="option" style="background-image: url(img/3.jpg);"></div>
+          <div class="option" style="background-image: url(img/4.jpg);"></div>
+          <div class="option" style="background-image: url(img/5.jpg);"></div>
+          <div class="option" style="background-image: url(img/6.jpg);"></div>
+        </div>
+      </div>
+      <!--Accordion with picture END-->
+    </main>
+    <footer class="footer">I Footer</footer>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="src/script.js"></script>
+
 </html>
