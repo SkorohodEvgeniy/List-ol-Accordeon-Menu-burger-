@@ -240,6 +240,7 @@ body {
 .main {
   flex: 1 1 auto;
   /*Magic*/
+  width: 100%;
 }
 
 .footer {
@@ -515,7 +516,7 @@ input:valid+span::before {
   min-width: 320px;
 }
 
-.wrapper {
+.optional_wrapper {
   display: flex;
   height: 100vh;
   justify-content: center;
